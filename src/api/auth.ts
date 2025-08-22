@@ -4,7 +4,7 @@ import { LoginRequest, RegisterRequest, User } from "./types";
 
 const baseUrl = apiUrl + "users/";
 export const login = async (request: LoginRequest) => {
-  let url = 'https://trash2cashapi.trash2cash.us/v1/api/users/' + "login";
+  let url = baseUrl + "login";
   return await post(url, request);
 };
 
